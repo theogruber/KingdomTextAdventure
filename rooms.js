@@ -1,0 +1,1 @@
+    var openField= new Room("Open Field");

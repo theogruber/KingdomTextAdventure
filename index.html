@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kingdom</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="objects.js"></script>
+    <script src="rooms.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="create">
+    <h2>Welcome to Kingdom, a text adventure game created by a tired senior. Kingdom is based off of reality, there is no magic nor are there any dragons. Whether you chose to be a serf or a duke an adventure awaits you. Start making your character now.
+    </h2>
+    <h2>What is your name?</h2>
+    <td><input type="text" id="name"></td>
+    <h2>Choose your place of origin</h2>
+    <select id="Place of origin" name="category" style="width: 212px;">
+        <option value="French">French</option>
+        <option value="Saxon">Saxon</option>
+        <option value="Gaelic">Gaelic</option>
+        <option value="Iberian">Iberian</option>
+        <option value="Gothic">Gothic</option>
+        <option value="Rus">Rus</option>
+        <option value="Nordic">Nordic</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Mongolian">Mongolian</option>
+    </select>
+    <h2>Choose your faith</h2>
+    <select id="Faith" name="category" style="width: 212px;">
+        <option value="Catholic">Catholic</option>
+        <option value="Jewish">Jewish</option>
+        <option value="Muslim">Muslim</option>
+        <option value="Norse">Norse</option>
+        <option value="Hellenic">Hellenic</option>
+        <option value="Animist">Animist</option>
+        <option value="Tengri">Tengri</option>
+        <option value="Zoroastrianism">Zoroastrianism</option>
+    </select>
+    <h2>Choose your rank</h2>
+    <select id="Rank" name="category" style="width: 212px;">
+        <option value="Serf">Serf</option>
+        <option value="Squire">Squire</option>
+        <option value="Knight">Knight</option>
+        <option value="Count">Count</option>
+        <option value="Duke">Duke</option>
+    </select>
+    <button id ="continue" onclick="Choose()">Continue</button>
+</div>
+<div id="field">
+    <h3 id="Room">You awaken in an open field, all you remember was being hit in the head. Your head still hurts but you work with it</h3>
+    <h3>You say a note near by, you also see a sign in the distance. Do you read the note or head to the sign?</h3>
+    <button id ="continue2">Head to the Sign</button>
+    <button id="note">Read the Note</button>
+    <button id="explore">Explore the Area?</button>
+</div>
+<div id="crossroad">
+    <h1>You head to the sign, when you get there you realize that it is a crossroads. The sign indicates you are close to the village of Aš </h1>
+    <button id="continue3">Head on to Aš </button>
+</div>
+<div id="letter">
+    <h3>The note reads "We have taken everything but your life, don't try to find us"</h3>
+    <button id="goBack">Stop looking at the note</button>
+</div>
+<div id="Aš">
+
+</div>
+</body>
+</html>
