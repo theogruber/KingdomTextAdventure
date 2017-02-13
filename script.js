@@ -42,3 +42,10 @@ $(document).ready(function(){
         $("#Aš").show();
     });
 });
+$(document).ready(function(){
+    $("#exploration").hide();
+    $("#explore").click(function () {
+        $("#field").hide();
+        $("#exploration").show();
+    });
+});
